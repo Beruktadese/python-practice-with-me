@@ -209,8 +209,43 @@ print("The odd number in the list is :",x)
 '''
 
 # Write a Python program to Remove empty List from List.
-
+'''
 list=[[24,234],[],[343],[523],[4353]]
 x=[i for i in list if i]
 print("the number is :",x)
+'''
+
+# to find the unique value in the dictionary 
+'''
+my_list={"a":20,"b":10,"c":40,"d":20,"e":10}
+x=set()
+for i in my_list.values():
+    x.add(i)
+u=list(x)
+print(u)
+'''
+# Write a Python program to find the sum of all items in a dictionary
+'''
+my_list={"a":20,"b":10,"c":40,"d":20,"e":10}
+sum=0
+for i in my_list.values():
+    sum+=i
+print(sum)
+'''
+
+# Write a Python program to Merging two Dictionaries.
+'''
+dict1={"a":23,"b":8,"c":45}
+dict2={"d":12,"e":35,"f":67}
+dict1.update(dict2)
+print(dict1)
+'''
+# Write a Python program to convert key-values list to flat dictionary.
+'''
+key_value=[('a',1),('b',2),('c',3),('d',4)]
+x={}
+x.update(key_value)
+print(x)
+'''
+
 
